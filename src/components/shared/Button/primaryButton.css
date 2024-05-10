@@ -1,0 +1,40 @@
+button {
+  align-items: center;
+  background-image: linear-gradient(144deg, #395ac7, #0ddeb8 50%, #395ac7);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  padding: 3px;
+  text-decoration: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button span {
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+button:hover span {
+  background: none;
+}
+
+.border-gradient {
+  border: 1px solid transparent; 
+  border-radius: 12px; /* For a circle, use rounded-full. For rounded corners, adjust the radius value */
+  background-image: linear-gradient(to right, #395AC7, #0DDEB8);
+  background-clip: padding-box; 
+  
+  
+}
