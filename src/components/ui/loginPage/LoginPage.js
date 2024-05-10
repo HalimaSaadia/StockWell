@@ -1,8 +1,7 @@
-"use client"
-
+"use client";
+import securityAnimation from "@/lotties/securityAnimation.json";
 import Lottie from "react-lottie";
-import securityAnimation from "@/lotties/securityAnimation.json"
-import SignUpForm from "../signUpForm/SignUpForm";
+import LoginForm from "../loginForm/LoginForm";
 
 export const options = {
   loop: true,
@@ -12,11 +11,11 @@ export const options = {
     preserveAspectRatio: "xMidYMid slice",
   },
 };
-const SignUpPage = () => {
- 
+
+const LoginPage = () => {
   return (
     <div>
-      <SignUpForm/>
+      <LoginForm />
       <div className="securityAnimation">
         <Lottie options={options} />
       </div>
@@ -24,4 +23,4 @@ const SignUpPage = () => {
   );
 };
 
-export default SignUpPage;
+export default LoginPage;

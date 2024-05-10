@@ -1,11 +1,12 @@
 import { AuthContext } from "@/Provider/AuthProvider";
+import Link from "next/link";
 import React, { useContext } from "react";
 import toast from "react-hot-toast";
 import { FaGithub } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import Swal from "sweetalert2";
 
-const SignInWithSocial = () => {
+const SignInWithSocial = ({ href }) => {
   const { loginWithGoogle, loginWithGithub } = useContext(AuthContext);
 
   const handleGoogleLogin = () => {
@@ -71,23 +72,47 @@ const SignInWithSocial = () => {
       });
   };
   return (
-    <div className="md:flex justify-between gap-5 space-y-5 md:space-y-0">
-      <div
-        onClick={handleGoogleLogin}
-        className="border-gradient p-[1px] flex-1"
-      >
-        <div className="flex gap-2 items-center  bg-[#050505] px-3 py-5 rounded-xl cursor-pointer">
-          <FcGoogle className="text-2xl" />{" "}
-          <span className="text-white text-sm">CONTINUE WITH GOOGLE</span>
+    <>
+      <div className="flex items-center my-5">
+        <hr className="flex-1" /> <span className="mx-2 text-white">or</span>{" "}
+        <hr className="flex-1" />
+      </div>
+      <div className="md:flex justify-between gap-5 space-y-5 md:space-y-0">
+        <div
+          onClick={handleGoogleLogin}
+          className="border-gradient p-[1px] flex-1"
+        >
+          <div className="flex gap-2 items-center  bg-[#050505] px-3 py-5 rounded-xl cursor-pointer min-w-max">
+            <FcGoogle className="text-2xl" />{" "}
+            <span className="text-white text-sm">CONTINUE WITH GOOGLE</span>
+          </div>
+        </div>
+        <div onClick={handleGithub} className="border-gradient p-[1px] flex-1">
+          <div className="flex gap-2 items-center  bg-[#050505] px-3 py-5 rounded-xl cursor-pointer  min-w-max">
+            <FaGithub className="text-2xl bg-white rounded-full" />{" "}
+            <span className="text-white text-sm">CONTINUE WITH GITHUB</span>
+          </div>
         </div>
       </div>
-      <div onClick={handleGithub} className="border-gradient p-[1px] flex-1">
-        <div className="flex gap-2 items-center  bg-[#050505] px-3 py-5 rounded-xl cursor-pointer">
-          <FaGithub className="text-2xl bg-white rounded-full" />{" "}
-          <span className="text-white text-sm">CONTINUE WITH GITHUB</span>
-        </div>
+
+      <div className="mt-10 bg-[#000000cc] p-2 px-4 rounded-se-xl rounded-es-xl w-max ">
+        {href === "login" ? (
+          <p className="text-white text-sm">
+            Have Account? &nbsp;{" "}
+            <Link className="text-secondaryColor" href={href}>
+              Sign In
+            </Link>
+          </p>
+        ) : (
+          <p className="text-white text-sm">
+            No Account? &nbsp;{" "}
+            <Link className="text-secondaryColor" href={href}>
+              Sign Up
+            </Link>
+          </p>
+        )}
       </div>
-    </div>
+    </>
   );
 };
 

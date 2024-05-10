@@ -206,20 +206,9 @@ const SignUpForm = () => {
               <PrimaryButton />
             </div>
           </form>
-          <div className="flex items-center my-5">
-            <hr className="flex-1" />{" "}
-            <span className="mx-2 text-white">or</span>{" "}
-            <hr className="flex-1" />
-          </div>
-          <SignInWithSocial />
-          <div className="mt-10 bg-[#000000cc] p-2 px-4 rounded-se-xl rounded-es-xl w-max ">
-            <p className="text-white text-sm">
-              Have Account? &nbsp;{" "}
-              <Link className="text-secondaryColor" href="#">
-                Sign In
-              </Link>
-            </p>
-          </div>
+        
+          <SignInWithSocial href="login" />
+          
         </div>
       </div>
     </>
