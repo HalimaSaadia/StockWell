@@ -8,7 +8,7 @@ import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBhuzGI27qSN4A5zW1F-eCRd9dYByEHXZ8",
-  authDomain: process.env.AUTH_DOMAIN,
+  authDomain: "inventory-management-588fc.firebaseapp.com",
   projectId: process.env.PROJECT_ID,
   storageBucket: process.env.STORAGE_BUCKET,
   messagingSenderId: process.env.MESSAGING_SENDER_ID,
