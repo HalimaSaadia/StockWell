@@ -14,7 +14,8 @@ module.exports = {
         primaryColor:"#0DDEB8",
         secondaryColor:"#395AC7",
         primaryBrightColor:"#FF8A65",
-        bgPrimary:"#171717"
+        bgPrimary:"#171717cc",
+        textDark:"#171717"
       }
     },
   },
