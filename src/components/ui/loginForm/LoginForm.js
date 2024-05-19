@@ -22,7 +22,12 @@ const router = useRouter()
       .then((res) => {
         Swal.fire({
           icon: "success",
-          confirmButtonColor: "#5e503f",
+          showClass: {
+            popup: 'swal2-show'
+          },
+          hideClass: {
+            popup: ''
+          },
           title: "successfully Logged In",
         });
         toast.remove(toastId);
@@ -33,7 +38,12 @@ const router = useRouter()
         console.log(error);
         Swal.fire({
           icon: "error",
-          confirmButtonColor: "#5e503f",
+          showClass: {
+            popup: 'swal2-show'
+          },
+          hideClass: {
+            popup: ''
+          },
           title: error.message,
         });
         toast.remove(toastId);

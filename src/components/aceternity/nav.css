@@ -1,0 +1,11 @@
+.customNavbarColor{
+    background-color:hsla(0,0%,14%,1);
+background-image:
+radial-gradient(at 59% 47%, hsla(76,0%,14%,1) 0px, transparent 50%),
+radial-gradient(at 17% 17%, hsla(28,100%,0%,1) 0px, transparent 50%),
+radial-gradient(at 31% 53%, hsla(355,0%,14%,1) 0px, transparent 50%),
+radial-gradient(at 90% 18%, hsla(340,100%,0%,1) 0px, transparent 50%),
+radial-gradient(at 0% 100%, hsla(22,0%,14%,1) 0px, transparent 50%),
+radial-gradient(at 68% 97%, hsla(240,100%,0%,1) 0px, transparent 50%),
+radial-gradient(at 0% 0%, hsla(343,0%,14%,1) 0px, transparent 50%);
+}

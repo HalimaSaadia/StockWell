@@ -63,7 +63,7 @@ const SignUpForm = () => {
             updateUserProfile(name, profileImage).then(() => {});
             Swal.fire({
               icon: "success",
-              confirmButtonColor: "#5e503f",
+    
               title: "Successfully Sign up",
             });
             toast.remove(toastId);
@@ -73,7 +73,7 @@ const SignUpForm = () => {
             Swal.fire({
               icon: "error",
               title: err.message,
-              confirmButtonColor: "#5e503f",
+    
             });
             toast.remove(toastId);
           });
@@ -82,7 +82,7 @@ const SignUpForm = () => {
         console.log(error);
         Swal.fire({
           icon: "error",
-          confirmButtonColor: "#5e503f",
+
           title: error.message,
         });
         toast.remove(toastId);

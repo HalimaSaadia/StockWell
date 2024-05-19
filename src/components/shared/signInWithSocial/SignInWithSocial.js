@@ -25,7 +25,6 @@ const SignInWithSocial = ({ href }) => {
         //   .then((res) => console.log(res.data));
         Swal.fire({
           icon: "success",
-          confirmButtonColor: "#5e503f",
           title: "successfully Logged In",
         });
         toast.remove(toastId);
@@ -34,7 +33,6 @@ const SignInWithSocial = ({ href }) => {
       .catch((error) => {
         Swal.fire({
           icon: "error",
-          confirmButtonColor: "#5e503f",
           title: error.message,
         });
         toast.remove(toastId);
@@ -56,7 +54,6 @@ const SignInWithSocial = ({ href }) => {
         //   .then((res) => console.log(res.data));
         Swal.fire({
           icon: "success",
-          confirmButtonColor: "#5e503f",
           title: "successfully Logged In",
         });
         toast.remove(toastId);
@@ -65,7 +62,7 @@ const SignInWithSocial = ({ href }) => {
       .catch((error) => {
         Swal.fire({
           icon: "error",
-          confirmButtonColor: "#5e503f",
+
           title: error.message,
         });
         toast.remove(toastId);
